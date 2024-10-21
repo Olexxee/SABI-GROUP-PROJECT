@@ -1,0 +1,638 @@
+:root {
+  --red-color: red;
+  --light-blue: rgb(4, 4, 34);
+  --dark-color: #00000f;
+  --white-color: #fff;
+  --light-dark: #f8f8ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+
+/* GENERAL STYLES */
+
+body {
+  background: var(--white-color);
+  font-family: "Merriweather";
+  /* border: 2px solid black; */
+  font-size: 15px;
+}
+
+.btn {
+  border: none;
+  background: var(--red-color);
+  color: var(--white-color);
+  padding: 20px;
+  width: 180px;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.btn-rounded {
+  border: none;
+  border-radius: 20px;
+  background: var(--red-color);
+  color: var(--white-color);
+  padding: 20px;
+  width: 180px;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--dark-color);
+}
+
+a:hover,
+.footer ul li {
+  color: var(--red-color);
+}
+
+img {
+  width: 100%;
+}
+
+.red {
+  color: var(--red-color);
+}
+
+/* HEADER */
+
+/* NAV */
+
+nav {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  /* border: 1px solid green; */
+}
+
+nav img {
+  width: 150px;
+}
+
+nav .bar {
+  display: none;
+}
+.nav ul {
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li:nth-child(1) {
+  border-bottom: 2px solid var(--red-color);
+  color: var(--dark-color);
+}
+
+header .picturebg {
+  background: url(../Images/IMG-20241018-WA0003.jpg) no-repeat center
+    center/cover;
+  width: 100%;
+}
+
+header .showcase {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  width: 50%;
+}
+
+header .showcase h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+header .showcase .dot ul li {
+  display: inline-block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  margin: 3rem 1rem 1rem 0;
+}
+
+header .showcase .dot ul li:nth-child(3) {
+  background-color: var(--red-color);
+}
+
+header .showcase .abs ul li {
+  list-style: none;
+  font-size: 30px;
+}
+
+/* FIRST MAIN SECTIION */
+
+section.why {
+  height: 70vh;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section.why .reason {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: auto;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+section.why h2 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+section.why hr.redbg {
+  width: 100px;
+  padding: 3px;
+  background-color: var(--red-color);
+  border-radius: 20px;
+}
+
+section.why .reason .center {
+  text-align: center;
+  background-color: var(--light-blue);
+  color: var(--white-color);
+  height: 35vh;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.center h3 {
+  margin: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.center i {
+  font-size: 40px;
+}
+
+section#newarrivals {
+  height: 50vh;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: url(../Images/arrival-bg.png) no-repeat center center/cover;
+}
+
+section#newarrivals h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+section#products {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+section#products h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+section .items {
+  width: 70vw;
+  margin: auto;
+}
+
+section .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+section .products .item {
+  background: var(--light-dark);
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+section .products .item p span.space {
+  margin-left: 2rem;
+}
+
+section .products .item img {
+  width: 200px;
+  height: 200px;
+}
+
+/* NEWSLETTER SUBSCRIBE */
+
+section#subcribe {
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: grey;
+  padding: 2rem;
+}
+
+.subcontent {
+  margin-top: 2rem;
+  width: 70vw;
+  margin: auto;
+}
+
+.subcontent h2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.subcontent p {
+  margin-top: 10px;
+}
+
+.subcontent input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 1rem;
+  border: none;
+}
+
+.subcontent .btn-rounded {
+  width: 300px;
+  padding: 15px;
+}
+
+/* TESTIMONIAL */
+
+section#testimonials {
+  height: 70vh;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section#testimonials .t-content {
+  justify-content: center;
+  position: relative;
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+section#testimonials h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+section#testimonials hr.red {
+  position: absolute;
+  background: var(--red-color);
+  border-radius: 20px;
+  padding: 3px;
+  width: 60px;
+  top: 40px;
+  left: 45%;
+}
+
+section#testimonials .t-content .profile {
+  display: flex;
+  width: 60vw;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+}
+
+section#testimonials .t-content .profile .profileimg img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+section#testimonials .t-content .profile i {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+section#testimonials .t-content .profile p {
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(218, 205, 205);
+}
+
+.footer img {
+  width: 80px;
+  height: 40px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  gap: 1rem;
+}
+
+.footer ul li {
+  list-style: none;
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.footer h2 {
+  margin-bottom: 1rem;
+  align-items: start;
+  text-align: start;
+  text-transform: capitalize;
+}
+
+.footer .newsletter {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer input {
+  padding: 10px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.footer .btn {
+  padding: 8px;
+  width: 100%;
+}
+
+footer .footer > div:nth-child(1) p {
+  margin-bottom: 20px;
+}
+
+footer .darkbg {
+  background: var(--dark-color);
+  margin-top: 20px;
+}
+
+footer .darkbg p {
+  color: var(--light-dark);
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+/* media queries for responsiveness starts here */
+@media (max-width: 850px) {
+  header {
+    padding: 1rem;
+  }
+  header ul li {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav .bar {
+    display: block;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  header .showcase h1 {
+    font-size: 30px;
+    text-wrap: nowrap;
+  }
+
+  header .showcase {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  header .showcase p {
+    font-size: 12px;
+  }
+
+  header .showcase button {
+    padding: 15px;
+    width: 150px;
+  }
+
+  section.why {
+    height: 100vh;
+    margin-bottom: 2rem;
+  }
+
+  section.why h2 {
+    font-size: 30px;
+  }
+
+  section.why .reason {
+    display: block;
+    height: 100vh;
+  }
+
+  section.why .reason .center {
+    height: 170px;
+    padding: 1rem;
+    margin-top: 10px;
+  }
+
+  section.why .reason .center i {
+    font-size: 15px;
+  }
+
+  section.why .reason .center h3 {
+    font-size: 20px;
+  }
+
+  section.why .reason .center p {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  section#newarrivals {
+    height: 70vh;
+  }
+
+  section#newarrivals p {
+    font-size: 13px;
+  }
+
+  section#newarrivals button {
+    padding: 15px;
+  }
+
+  section .items {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  section .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  section .products .item img {
+    height: 150px;
+    width: 150px;
+  }
+
+  section#subcribe {
+    height: 60vh;
+  }
+  .subcontent .btn-rounded,
+  input {
+    width: 250px;
+    padding: 15px;
+  }
+
+  section#testimonials {
+    height: 60vh;
+  }
+
+  section#testimonials h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  section#testimonials .t-content .profile {
+    width: 100%;
+  }
+
+  section#testimonials .t-content .profile .profileimg img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 2rem;
+  }
+
+  section#testimonials p {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .footer {
+    display: block;
+    padding: 10px;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footer ul li {
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .footer p {
+    margin-top: 10px;
+  }
+
+  .footer h2 {
+    margin-bottom: 5px;
+    align-items: start;
+    text-align: start;
+  }
+
+  footer .footer > div:nth-child(1) p {
+    margin-bottom: 7px;
+  }
+
+  .footer .newsletter {
+    display: block;
+    align-items: center;
+  }
+
+  .footer .newsletter input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+  }
+
+  .footer .newsletter .btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  footer .darkbg p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    padding: 0;
+    width: 100%;
+  }
+
+  nav .bar {
+    display: block;
+  }
+
+  section .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .subcontent .btn-rounded,
+  input {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .footer .darkbg p {
+    font-size: 10px;
+  }
+
+  footer {
+    padding: 0;
+    width: 100%;
+  }
+}
